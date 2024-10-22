@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Await</title>
+</head>
+
+<body>
+    <u>
+        <h1><b>JSON Await Function</b></h1>
+    </u>
+    <i>
+        <p>Multiply 3 x 5</p>
+        <p id="await"></p>
+    </i>
+    <script>
+        async function multiply(a, b) {
+            let response = await a * b;
+            display(response);
+        }
+        function display(input) {
+            document.getElementById("await").innerHTML = input;
+        }
+        multiply(3, 5);
+    </script>
+    <style>
+        body {
+            background-color: rgba(166, 173, 247, 0.488);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 90px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 40px;
+            color:rgb(27, 163, 163);
+        }
+    </style>
+</body>
+
+</html>
